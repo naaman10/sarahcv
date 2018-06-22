@@ -1,0 +1,16 @@
+---
+title: Sarah Lambrechts
+timezone: GMT
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+email: naamanh10@gmail.com
+description: Terrible at VR.
+baseurl: ''
+url: http://resume.naamanhudson.com/
+markdown: kramdown
