@@ -1,0 +1,92 @@
+---
+---
+body,html {
+  height: 100%;
+}
+.spacer {
+  height: 20%;
+}
+// .square {
+//   background-color: #f7ca67;
+//   width: 100%;
+//   transform: rotate(45deg);
+//   position: absolute;
+//   top: 0px;
+//   left: 200px;
+//
+// }
+//
+// .square:after {
+//   content: "";
+//   display: block;
+//   padding-bottom: 100%;
+// }
+
+.square {
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    overflow: hidden;
+}
+.square:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -38px;
+    right: -474px;
+    z-index: -1;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #f7ca67;
+}
+.triangle {
+    width: 40%;
+    height: 0;
+    padding-top: 40%;
+    overflow: hidden;
+
+}
+.triangle:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    position: absolute;
+    bottom: -38px;
+    right: 400px;
+    z-index: -1;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #e0d5d5;
+    opacity: .8;
+}
+.poem {
+  margin-top: 20px;
+}
+.poem p {
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+}
+.poem p.author {
+  font-family: monospace;
+  text-align: left;
+  font-size: 16px;
+}
+@media (max-width: 575.98px){
+  .square:after {
+    border-bottom: 200px solid transparent;
+    border-left: 200px solid #f7ca67;
+    margin-left: -200px;
+    right: -200px;
+    top: -16px;
+  }
+  .triangle:after {
+    right: 30px;
+    bottom: -16px;
+    border-top: 200px solid transparent;
+    border-right: 200px solid #e0d5d5;
+  }
+}
